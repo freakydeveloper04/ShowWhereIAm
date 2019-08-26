@@ -39,7 +39,7 @@ class LoginVC: UIViewController {
     @IBAction func loginButton(_ sender: UIButton) {
         
         
-            if(numberLabel.text != numberText.text){
+            if(numberLabel.text == numberText.text){
                 
                 let story = UIStoryboard(name: "Main", bundle: nil)
                 let vcc = story.instantiateViewController(withIdentifier: "homescreen")
